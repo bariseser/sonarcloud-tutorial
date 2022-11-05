@@ -1,11 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+)
 
 func main() {
-	fmt.Println("Hello World")
+	x := rand.Intn(10)
+	y := rand.Intn(10)
+	fmt.Printf("multiply %d and %d: %d", x, y, multiply(x, y))
 }
 
-func multiple(x, y int) int {
+func multiply(x, y int) int {
 	return x * y
 }
